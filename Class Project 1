@@ -1,0 +1,60 @@
+#include <stdio.h>
+int main() {
+ int input;
+ printf(
+ "1. Triangle"
+ "\n2. Circle"
+ "\n3. Rectangle"
+ "\n4. Parallelogram"
+ "\nEnter a shape:"
+ );
+ scanf("%d", input);
+ 
+ if (input==1)
+ {
+   //Triangle
+   float height, base, area;
+   printf("Enter height:");
+   scanf("%f", &height);
+   printf("Enter base:");
+   scanf("%f", &base);
+   area= 0.5 * height * base;
+   printf("area= %f", area);
+ }
+ 
+ else if(input==3)
+ {
+   //Circle
+   float area, radius, pie;
+   pie=3.142;
+   printf("Enter radius:");
+   scanf("%f", &radius);
+   area= 3.142 * radius * radius;
+   printf("Area= %f", area);
+ }
+ 
+ else if(input==4)
+ {
+   //Rectangle
+   float lenght, width, area;
+   printf("Enter lenght:");
+   scanf("%f", &lenght);
+   printf("Enter width:");
+   scanf("%f", &width);
+   area= lenght * width;
+   printf("Area= %f", area);
+ }
+ 
+ else if(input==5)
+ {
+   //Parallelogram
+   float base, height, area;
+   printf("Enter base:");
+   scanf("%f", &base);
+   printf("Enter height:");
+   printf("%f", &height);
+   area= base * height;
+   printf("Area= %f", area);
+ }
+ return 0;
+ }
